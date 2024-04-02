@@ -65,7 +65,7 @@
         </h1>
         <div className="card">
           <Logo className="logo" />
-          <h2>Sign In</h2>
+        <h2 >Sign In</h2>
           <form onSubmit={handleSubmit}>
             <FormInput
               label="username"

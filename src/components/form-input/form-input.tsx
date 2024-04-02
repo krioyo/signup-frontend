@@ -7,13 +7,14 @@ import { InputHTMLAttributes, FC } from "react";
   const FormInput: FC<FromInputProps> = ({ label, ...otherProps }) => {
     return (
       <div className="group">
-        <input {...otherProps} />
         {
           label &&
           <div >
             {label}
           </div>
         }
+        <input {...otherProps} />
+        
       </div>
     );
   }
