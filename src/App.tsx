@@ -60,7 +60,7 @@
         <h1>
           { user && `Welcome! ${user.name}`}
         </h1>
-        <div className="card">
+        {!user &&<div className="card">
           <Logo className="logo" />
         <h2 >Sign In</h2>
           <form onSubmit={handleSubmit}>
@@ -87,7 +87,7 @@
               </span>
             </div>
           </form>
-        </div>
+        </div>}
       </div>
     );
   }
