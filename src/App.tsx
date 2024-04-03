@@ -6,6 +6,7 @@
   import { ReactComponent as Cognito } from "./cognito.svg";
 
   import './App.css';
+import HomePage from "./pages/homepage";
 
   // TypeScript declarations
   type User = {
@@ -57,10 +58,9 @@
     };
 
     return (
+        <>
+          {!user ? 
       <div className='App-header'>
-        <h1>
-          { user && `Welcome! ${user.name}`}
-        </h1>
         <div className="card">
           <Logo className="logo" />
         <h2 >Sign In</h2>
@@ -94,6 +94,9 @@
           </div>
         </div>
       </div>
+      :
+      <HomePage></HomePage>}
+      </>
     );
   }
 
