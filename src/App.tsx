@@ -8,10 +8,7 @@
 
   // TypeScript declarations
   type User = {
-    id: number,
     name: string,
-    username: string,
-    password: string
   }
 
   const defaultFormFields = {
@@ -42,14 +39,13 @@
 
       try {
         // make the API call
-        const res:User = await getData(
+        const res:string = await getData(
           'https://aws-serverless.onrender.com/signin', username, password
         )
-        setUser(res);
+        setUser({name: res});
         resetFormFields()
       } catch (error) {
         alert('User Sign In Failed');
-        console.log(error)
       }
     };
 
