@@ -4,7 +4,6 @@ import amazonImage from './amazon_1.png';
 import acrhitectureImage from "./amazon_architecture.png"
 
 const HomePage: React.FC = () => {
-    
 
     useEffect(() => {
         createCube(-10, 0, 0);
@@ -22,12 +21,12 @@ const HomePage: React.FC = () => {
           const timeSinceLastScroll = now - lastScrollTime;
           lastScrollTime = now;
       
-          if (!isScrolling && timeSinceLastScroll > 200) {
+          if (!isScrolling && timeSinceLastScroll > 50) {
             isScrolling = true;
             const direction = event.deltaY > 0 ? 1 : -1;
             const nextSectionIndex = currentSectionIndex + direction;
       
-            if (nextSectionIndex > 0 && nextSectionIndex < sections.length) {
+            if (nextSectionIndex >= 0 && nextSectionIndex < sections.length) {
               scrollToSection(nextSectionIndex);
               currentSectionIndex = nextSectionIndex;
       
@@ -39,7 +38,7 @@ const HomePage: React.FC = () => {
       
             setTimeout(() => {
               isScrolling = false;
-            }, 1000);
+            }, 100);
           }
         }
     
@@ -107,9 +106,9 @@ const HomePage: React.FC = () => {
         <div className="container3">
             <div className="content3">
                 <div className="text">
-                    <p>After reviewing the existing user interface, we've developed innovative designs that prioritise ease of use and user engagement. These designs are conceptualised to provide a clear glimpse into the envisioned application functionality and overall design direction.</p>
-                    <p>Aligning with Amazon's recognizable colour scheme, we've carefully selected a palette that resonates with Amazon's brand identity, ensuring a seamless visual connection for users. The introduction of a user profile feature at the top of the screen is a deliberate strategy to enhance personalization, fostering a sense of value and recognition among users. This design choice paired with the minimalistic design approach, signifies our commitment to creating a user-centric experience, making the application accessible and straightforward for a broad target audience.</p>
-                    <p>While open to future adjustments, and with confidence that we are able to share our vision to whatever we do, we are believe that the current design effectively balances Amazon's branding with a user-friendly interface.</p>
+                    <p>After reviewing the existing user interface, we've developed designs that prioritise ease of use and user engagement. These designs were made to provide a clear glimpse into the application functionality and overall feel of it.</p>
+                    <p>Aligning with Amazon's recognizable colour scheme, we've carefully selected a palette that resonates with Amazon's brand identity, ensuring a seamless visual connection for users. The introduction of a user profile feature at the top of the screen is a deliberate strategy to enhance personalization. This design choice paired with the minimalistic design approach, signifies our commitment to creating a user-centric experience, making the application accessible and straightforward for a broad target audience.</p>
+                    <p>While open to future adjustments, and with confidence that we are able to share our vision to whatever we do, we believe that the current design effectively balances Amazon's branding with a user-friendly interface.</p>
                 </div>
             </div>
         </div>
@@ -130,10 +129,10 @@ const HomePage: React.FC = () => {
         <div className="container3">
             <div className="content">
                 <div className="text2">
-                    <div className="big-text2" id="title">An image is like a 1000 words, but some documentation is always needed.</div>
-                    <p>Building upon the initial architectural blueprint provided, we've expanded the design to include additional services that are deemed essential as per the project's scope. This expansion follows the architectural methodology previously established, with the introduction of new microservices highlighted in the project description, such as IoT and AI/ML technologies.</p>
+                    <div className="big-text2" id="title">An image is like a 1000 words, but words are also usefull.</div>
+                    <p>Building upon the initial architectural blueprint provided, we've expanded the design to include additional services that might be essential. This expansion follows the architectural methodology previously established, with the introduction of new services highlighted in the project description, such as IoT and AI/ML technologies.</p>
                     <p>In the course of our investigation into IoT solutions, we identified Greengrass and IoT Core as the most suitable services for our needs. This choice was influenced by the correlation between IoT and AI/ML, where data collected via IoT devices is leveraged to train machine learning models, subsequently informing our database's insights.</p>
-                    <p>Utilising Amazon SageMaker, we've streamlined the process of building, training, and deploying AI models by using IoT-generated data.</p>
+                    <p>Utilising Amazon SageMaker, we will streamline the process of building, training, and deploying AI models by using IoT-generated data.</p>
                     <p>Our strategy involves employing IoT Core as the foundational layer, facilitating the interaction between cloud services and IoT devices. Greengrass can be deployed to enhance our system with local data processing capabilities, then transferring the processed data to the cloud. This dual approach ensures a robust and efficient architecture, capitalising on the strengths of both IoT Core and Greengrass to meet our project's requirements.</p>
                 </div>
                     
