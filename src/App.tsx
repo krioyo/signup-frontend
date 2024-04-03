@@ -3,6 +3,7 @@
   import { ReactComponent as Logo } from "./logo.svg";
   import { getData } from "./utils/data-utils";
   import FormInput from './components/form-input/form-input';
+  import { ReactComponent as Cognito } from "./cognito.svg";
 
   import './App.css';
 
@@ -87,6 +88,10 @@
               </span>
             </div>
           </form>
+          <div  className="cognito">
+              <p>Powered by</p>
+            <Cognito />
+          </div>
         </div>
       </div>
     );
