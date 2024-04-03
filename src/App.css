@@ -7,6 +7,24 @@
   pointer-events: none;
 }
 
+.cognito {
+  margin-top: 20px;
+  align-items: center; /* Align items vertically */
+  display: flex;
+}
+
+.cognito p {
+  margin-right: 10px
+}
+
+.input {
+  border-color: #FF9900;
+  border: 2px solid;
+  border-radius: 4px;
+  
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

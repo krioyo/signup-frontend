@@ -1,6 +1,7 @@
 
   import { useState, ChangeEvent, FormEvent } from "react";
   import { ReactComponent as Logo } from "./logo.svg";
+  import { ReactComponent as Cognito } from "./cognito.svg";
   import { getData } from "./utils/data-utils";
   import FormInput from './components/form-input/form-input';
 
@@ -65,10 +66,10 @@
         <h2 >Sign In</h2>
           <form onSubmit={handleSubmit}>
             <FormInput
-              label="username"
-              type="username"
+              label="Username"
+              type="Username"
               required
-              name="username"
+              name="Username"
               value={username}
               onChange={handleChange}
             />
@@ -85,6 +86,11 @@
               <span>
                 <button type="button" onClick={reload}>Clear</button>
               </span>
+            <div  className="cognito">
+              <p>Powered by</p>
+            <Cognito />
+            </div>
+
             </div>
           </form>
         </div>}
