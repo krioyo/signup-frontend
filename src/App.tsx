@@ -42,6 +42,7 @@
         const res:string = await getData(
           'https://aws-serverless.onrender.com/signin', username, password
         )
+        console.log(res)
         setUser({name: res});
         resetFormFields()
       } catch (error) {
