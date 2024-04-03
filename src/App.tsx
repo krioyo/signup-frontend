@@ -68,7 +68,6 @@
             <FormInput
               label="Username"
               type="Username"
-              required
               name="Username"
               value={username}
               onChange={handleChange}
@@ -76,7 +75,6 @@
             <FormInput
               label="Password"
               type='password'
-              required
               name='password'
               value={password}
               onChange={handleChange}
