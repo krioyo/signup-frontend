@@ -82,10 +82,10 @@ import HomePage from "./pages/homepage";
               onChange={handleChange}
             />
             <div className="button-group">
-              <button type="submit">Sign In</button>
-              <span>
-                <button type="button" onClick={reload}>Clear</button>
-              </span>
+              <button className="signin-buttons" type="submit">Sign In</button>
+              
+                <button className="signin-buttons" type="button" onClick={reload}>Clear</button>
+              
             </div>
           </form>
           <div  className="cognito">

@@ -1,4 +1,5 @@
 import { InputHTMLAttributes, FC } from "react";
+import "../../App.css"
 
 
   type FromInputProps = { label: string } &
@@ -13,7 +14,7 @@ import { InputHTMLAttributes, FC } from "react";
             {label}
           </div>
         }
-        <input {...otherProps} />
+        <input className="input" {...otherProps} />
         
       </div>
     );

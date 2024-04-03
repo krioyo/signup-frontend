@@ -17,6 +17,14 @@
   margin-right: 10px
 }
 
+.input {
+  border-color: #FF9900;
+  border: 2px solid;
+  border-radius: 4px;
+  
+  
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -257,6 +265,24 @@ body {
 .download-button:hover {
   background-color: #FF9900; /* White background on hover */
   color: #222F3E; /* Black text on hover */
+}
+
+.button-group{
+  display: flex;
+  justify-content: space-between;
+
+}
+.signin-buttons{
+  background-color: #222F3E; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+
 }
 
 .download-info {
